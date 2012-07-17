@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/file_path_setting" android:summary="Base mp3 file settings">
+        <EditTextPreference android:title="@string/text_file_path" android:summary="Current path:" android:key="path" android:defaultValue="@string/default_path"/>
+        <PreferenceScreen android:title="@string/select_file_path" android:summary="The file path is ：">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://www.android.com" />
+        </PreferenceScreen>
+        <SwitchPreference android:title="@string/auto_search" android:summaryOn="Auto search is on" android:summaryOff="Auto search is off" android:key="autosearch" android:disableDependentsState="false"/>
+        <SwitchPreference android:title="@string/text_auto_nest_search" android:summaryOn="Nested is on" android:summaryOff="Nested is off" android:key="isnested" android:disableDependentsState="false"/>
+        
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/text_file_type" android:summary="Config audio file types">
+        <ListPreference android:title="@string/text_file_types" android:summary="Select audio file types" android:dialogTitle="Select audio file type" android:entryValues="@array/audio_type_array_values" android:entries="@array/audio_type_array_entries" android:key="filetype"/>
+    </PreferenceCategory>
+   
+</PreferenceScreen>

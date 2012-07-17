@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+    FrameLayout
+        android:id="@+id/id_main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dip" >
+	</FrameLayout
+    -->
+    <!--
+        fragment
+	        android:name="caw.pd.player.fragments.UIMusicListFragment"
+	        android:id="@+id/id_list_frame"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent" >
+	    </fragment
+    -->
+    <!--
+            include
+            android:id="@+id/control_panel"
+            android:layout_width="fill_parent"
+            layout="@layout/ui_music_info_fragment"
+            android:background="#ff0000" /
+    -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpagerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dip" />
+
+    <!--
+        include
+        android:id="@+id/control_panel"
+        android:layout_width="fill_parent"
+        layout="@layout/ui_music_ctrl_fragment" /
+    -->
+
+    <fragment
+        android:id="@+id/id_control_frame"
+        android:name="caw.pd.player.fragments.UIPlayControlFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="-70dip" >
+    </fragment>
+
+</LinearLayout>

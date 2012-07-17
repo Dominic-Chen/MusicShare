@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MusicShareActivity!</string>
+    <string name="app_name">享.音乐</string>
+    <string name="play_ctrl_text_start">Start</string>
+    <string name="play_ctrl_text_stop">Stop</string>
+    <string name="play_ctrl_text_pre">Pre</string>
+    <string name="play_ctrl_text_next">Next</string>
+    <string name="setting">Setting</string>
+    <string name="menu_setting_file">File Settings</string>
+	<string name="alert_dialog_username">Name:</string>
+    <string name="alert_dialog_password">Password:</string>
+    <string name="alert_dialog_text_entry">Text Entry dialog</string>
+    <string name="path">Path:</string>
+    
+    <string name="pref_search">文件设置</string>
+    <string name="pref_play">播放设置</string>
+    <string name="pref_share">分享设置</string>
+    
+    <string name="pref_search_summary">File Path Settings</string>
+    <string name="pref_play_summary">Mp3 Player Settings</string>
+    <string name="pref_share_summary">Mp3 Share Settings</string>
+    <string name="file_path_setting">File path settings</string>
+    <string name="select_file_path">Select Mp3 File Path</string>
+    <string name="auto_search">Is auto search mp3 files?</string>
+    <string name="text_auto_nest_search">Auto nest search</string>
+    <string name="text_file_path">Current Path:</string>
+    <string name="text_file_type">Current Type:</string>
+    <string name="text_auto_search">Auto search state:</string>
+    <string name="text_is_recurse">Recurse state:</string>
+    <string name="text_file_types">Audio file types</string>
+    <string name="default_path">duomi/</string>
+    
+    <string name="KEY_OF_FILE_PREF_PATH">path</string>
+    <string name="KEY_OF_FILE_PREF_AUTOSEARCH">autosearch</string>
+    <string name="KEY_OF_FILE_PREF_RECURSE">isnested</string>
+    <string name="KEY_OF_FILE_PREF_FILETYPE">filetype</string>
+    <string name="pause">pause</string>
+    <string name="menu_setting_share">分享设置</string>
+    <string name="menu_setting_ui">界面设置</string>
+    <string name="menu_setting_play">播放设置</string>
+    <string name="menu_list_item_delete">删除</string>
+    <string name="menu_list_item_setas">设为铃声</string>
+    <string name="menu_list_item_find">找寻...</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        
+    <header android:fragment="caw.pd.player.fragments.SearchPreFragment"
+            android:icon="@drawable/ic_settings_applications"
+            android:title="@string/pref_search"
+            android:summary="An example of some preferences." />
+
+    <header android:fragment="caw.pd.player.fragments.PlayPreFragment"
+            android:icon="@drawable/ic_settings_applications"
+            android:title="@string/pref_play"
+            android:summary="Some other preferences you can see.">
+        <!-- Arbitrary key/value pairs can be included with a header as
+             arguments to its fragment. -->
+        <extra android:name="someKey" android:value="someHeaderValue" />
+    </header>
+    
+    <header android:fragment="caw.pd.player.fragments.SharePreFragment"
+            android:icon="@drawable/ic_settings_applications"
+            android:title="@string/pref_share"
+            android:summary="Some other preferences you can see.">
+        <!-- Arbitrary key/value pairs can be included with a header as
+             arguments to its fragment. -->
+        <extra android:name="someKey" android:value="someHeaderValue" />
+    </header>
+
+</preference-headers>

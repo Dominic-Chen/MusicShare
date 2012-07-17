@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="audio_type_array_entries">
+        <item >*.Mp3</item>
+        <item >*.WWA</item>
+        <item >*.RM</item>
+    </string-array>
+    
+    <string-array name="audio_type_array_values">
+        <item >mp3</item>
+        <item >wma</item>
+        <item >rm</item>
+    </string-array>
+</resources>

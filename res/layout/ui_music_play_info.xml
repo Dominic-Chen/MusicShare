@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/info_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/play_mp3info"
+        android:layout_width="match_parent"
+        android:layout_height="256dip"
+        android:paddingBottom="0dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="10dip" >
+
+        <ImageView
+            android:id="@+id/mp3_cover_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:paddingLeft="23dip"
+            android:paddingBottom="2dip"
+            android:clickable="true"
+            android:src="@drawable/cd_cover" 
+            android:background="@drawable/cd_cover3"/>
+
+        <LinearLayout
+            android:id="@+id/mp3_base_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#86222222"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/mp3_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:textSize="18dip" />
+
+            <TextView
+                android:id="@+id/mp3_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dip"
+                android:textSize="13dip" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_details"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#00000000"
+            android:src="@android:drawable/ic_menu_info_details" />
+
+        <LinearLayout
+            android:id="@+id/mp3_action_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#86222222"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/btn_faverite"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:background="#00000000"
+                android:src="@android:drawable/ic_menu_agenda" />
+
+            <!--
+                    ImageButton
+                    android:id="@+id/btn_faverite"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="#00000000"
+                    android:src="@drawable/favorites_add_24" /
+            -->
+
+            <ImageButton
+                android:id="@+id/btn_setas"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:background="#00000000"
+                android:src="@android:drawable/ic_menu_set_as" />
+
+            <ImageButton
+                android:id="@+id/btn_share"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:background="#00000000"
+                android:src="@android:drawable/ic_menu_share" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_lrc_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="15dip"
+        android:gravity="center"
+        android:text="显示歌词"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="18dip" />
+
+</LinearLayout>

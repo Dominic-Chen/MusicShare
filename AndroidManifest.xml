@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="caw.pd"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="14" />
+
+    <application
+        android:icon="@drawable/ics_launcher"
+        android:label="@string/app_name">
+        <activity
+            android:name=".MusicShareActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".player.Mp3ListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.TAB"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".player.Mp3PlayerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.TAB"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".SettingActivity"></activity>
+        <service android:name=".player.services.PlayerService"></service>
+    </application>
+
+</manifest>
